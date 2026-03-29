@@ -1,0 +1,2 @@
+my first linux file
+learning linux from scratch

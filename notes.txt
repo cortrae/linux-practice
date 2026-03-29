@@ -1,0 +1,3 @@
+my first linux file
+learning linux from scratch
+nano is a terminal text editor
