@@ -36,3 +36,18 @@ Script extracts exact commands run, user responsible, and timestamps.
 **Why it matters:**
 Privilege escalation is one of the most common post-exploitation techniques.
 Monitoring sudo usage is a core SOC analyst task.
+
+### Exercise 3: Login Activity Report
+Generated a full summary of successful vs failed login sessions across the system.
+
+**Script:** login_report.sh
+
+**Findings:**
+244 successful sessions detected.
+7 failed login attempts recorded.
+A high failed-to-successful ration would indicate a brute force attack in progress.
+
+**Why it matters:**
+Baseline login activity is the foundation of anomaly detection.
+SOC analysts establish normal behavior patterns to identify deviations.
+Any sudden spike in failed logins triggers investigation.
