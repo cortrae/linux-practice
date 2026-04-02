@@ -51,3 +51,18 @@ A high failed-to-successful ration would indicate a brute force attack in progre
 Baseline login activity is the foundation of anomaly detection.
 SOC analysts establish normal behavior patterns to identify deviations.
 Any sudden spike in failed logins triggers investigation.
+
+### Exercise 4: Port Scan Detection
+Monitored system logs for indicators of port scanning activity.
+
+**Script:** port_scan_detect.sh
+
+**Findings:**
+0 port scan indicators detected.
+0 connection refused events in syslog.
+Clean baseline established for future comparison.
+
+**Why it matters:**
+Port scanning is typically the first phase of a network attack.
+Establishing a clean baseline allows analysts to immediately identify
+when scanning activity begins.
