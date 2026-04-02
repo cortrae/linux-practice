@@ -22,3 +22,17 @@ source="/var/log/auth.log" "authentication failure" earliest=-5m
 **Findings:**
 3 failed authentication events detected for user cortrae.
 Events included timestamp, username, terminal (tty), and user ID (uid).
+
+### Exercise 2: Sudo Privilege Escalation Monitoring
+Monitored sudo usage across the system to detect potential privilege escalation.
+
+**Script:** sudo_monitor.sh
+
+**Findings:**
+23 sudo commands detected on the system.
+1 failed sudo attempt identified.
+Script extracts exact commands run, user responsible, and timestamps.
+
+**Why it matters:**
+Privilege escalation is one of the most common post-exploitation techniques.
+Monitoring sudo usage is a core SOC analyst task.
