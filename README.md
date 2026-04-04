@@ -66,3 +66,17 @@ Clean baseline established for future comparison.
 Port scanning is typically the first phase of a network attack.
 Establishing a clean baseline allows analysts to immediately identify
 when scanning activity begins.
+
+### Exercise 5: Unified SOC Master Report
+Built a master script that runs all detection scripts and outputs a single unified report.
+
+**Script:** soc_report.sh
+
+**What it does:**
+Calls all four detection scripts in sequence and presents findings
+under a single report header with timestamp and hostname.
+
+**Why it matters:**
+In a real SOC environment analysts need consolidated views across
+multiple detection categories. This script simulates that workflow
+and can be scheduled to run automatically via cron.
