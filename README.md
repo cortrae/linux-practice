@@ -80,3 +80,18 @@ under a single report header with timestamp and hostname.
 In a real SOC environment analysts need consolidated views across
 multiple detection categories. This script simulates that workflow
 and can be scheduled to run automatically via cron.
+
+### Exercise 6: Automated Reporting with Cron
+Scheduled the SOC master report to run automatically every 30 minutes using cron.
+
+**Cron schedule:** */30 * * * *
+**Output log:** /home/cortrae/linux_practice/cron_report.log
+
+**What it does:**
+Runs soc_report.sh on a schedule and appends output to a log file.
+Simulates automated monitoring in a real SOC environment.
+
+**Why it matters:**
+SOC environments rely on automated alerting and reporting.
+Manual monitoring is not scalable -- automation is the standard.
+Understanding cron is fundamental for any Linux-based IT role.
