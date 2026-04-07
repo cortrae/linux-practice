@@ -95,3 +95,24 @@ Simulates automated monitoring in a real SOC environment.
 SOC environments rely on automated alerting and reporting.
 Manual monitoring is not scalable -- automation is the standard.
 Understanding cron is fundamental for any Linux-based IT role.
+
+### Exercise 7: Splunk Brute Force Alert
+Built a real-time scheduled alert in Splunk that detects brute force SSH attempts.
+Simulated attacks using repeated failed SSH logins and confirmed alert firing.
+
+**Search used:**
+source="/var/log/auth.log" "Failed password"
+
+**Alert settings:**
+- Schedule: Every 5 minutes (cron: */5 * * * *)
+- Trigger: Number of results > 3
+- Action: Add to Triggered Alerts
+
+**Findings:**
+Generated 100+ failed login events via SSH brute force simulation.
+Alert fired successfully within one 5 minute cron cycle.
+
+**Why it matters:**
+Brute force detection is one of the most fundamental SOC use cases.
+This exercise demonstrates end-to-end SIEM alerting from log ingestion
+to triggered alert -- the core workflow of a SOC analyst.
