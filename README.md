@@ -116,3 +116,14 @@ Alert fired successfully within one 5 minute cron cycle.
 Brute force detection is one of the most fundamental SOC use cases.
 This exercise demonstrates end-to-end SIEM alerting from log ingestion
 to triggered alert -- the core workflow of a SOC analyst.
+
+### Exercise 8: Splunk SOC Dashboard
+Built a visual SOC overview dashboard in Splunk Enterprise with three panels:
+- Line chart showing failed login attempts over time (5 minute intervals)
+- Single value panel showing total failed login count
+- Bar chart showing failed logins by host
+
+**Why it matters:**
+SOC analysts rely on dashboards for at-a-glance situational awareness.
+Visual data makes it faster to identify spikes, patterns, and anomalies
+that raw log searches can miss.
