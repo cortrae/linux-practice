@@ -127,3 +127,4 @@ Built a visual SOC overview dashboard in Splunk Enterprise with three panels:
 SOC analysts rely on dashboards for at-a-glance situational awareness.
 Visual data makes it faster to identify spikes, patterns, and anomalies
 that raw log searches can miss.
+![SOC Dashboard](images/soc-dashboard.png)
