@@ -128,3 +128,21 @@ SOC analysts rely on dashboards for at-a-glance situational awareness.
 Visual data makes it faster to identify spikes, patterns, and anomalies
 that raw log searches can miss.
 ![SOC Dashboard](images/soc-dashboard.png)
+
+### Exercise 9: System Baseline Capture
+Built a bash script that snapshots the normal state of the system for anomaly detection.
+
+**Script:** baseline.sh
+
+**What it captures:**
+- Running processes
+- Open ports and listening services
+- Logged in users
+- Disk usage
+- Failed login count from auth.log
+
+**Why it matters:**
+Establishing a baseline is the foundation of anomaly detection.
+SOC analysts and sysadmins document normal system behavior so any
+deviation — new open port, unknown process, unusual disk growth —
+immediately stands out as a potential indicator of compromise.
